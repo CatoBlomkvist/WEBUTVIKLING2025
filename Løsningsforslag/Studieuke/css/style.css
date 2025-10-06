@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&family=Poiret+One&display=swap');
+
+
+:root{
+
+    --text-color: #212121;
+    --shadow:  #8e8e8e;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--text-color);
+    margin: 0;
+}
+
+h1{
+    width: fit-content;
+}
+
+a{
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#global-header{
+    nav{
+        padding: 1rem;
+        box-shadow: 0px -1px 8px var(--shadow);
+    }
+}
+
+.hero-section{
+    min-height: 300px;
+    padding: 1rem;
+    background-image: url('https://picsum.photos/id/20/600/600/?blur=5');
+}
+
+
+figure{
+    margin: 0;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+
+.highlight{
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    img{
+        order:1;
+    }
+
+    h2{
+        order:2;
+    }
+    p{
+        order:3;
+    }
+}
+
+
+#services{
+    padding: 1rem;
+    i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        padding: 1rem;
+        font-size: 40px;
+        border: 1px solid var(--text-color);
+    }
+}
+.service-card{
+    display: flex;
+    gap: 1rem;
+}
+.hidden{
+    display: none;
+}
+.icon-btn{
+    background-color: transparent;
+    border: none;
+
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- RESPONSIV DESIGN: SKJERMER UNDER 600px --- */
+@media only screen and (max-width:600px){
+    
+    /* Menyen vises som "overlay" øverst på hele skjermen */
+    #menu {
+        background-color: #fff; /* Egen bakgrunn */
+        position: absolute;             /* Plasseres over annet innhold */
+        width: 100%;                    /* Full bredde */
+        top: 0;                         /* Starter helt øverst */
+        left: 0;                        /* Starter helt til venstre */
+        padding: 2rem;                  /* Luft rundt innholdet */
+        box-shadow: 0px -1px 8px var(--shadow);
+        margin: 0;
+    }
+
+
+    #close{
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        display: inline-block;
+    }
+
+}
+
+/* --- RESPONSIV DESIGN: SKJERMER OVER 600px --- */
+@media only screen and (min-width:600px){
+
+    /* Header får flex for å plassere innholdet på hver side */
+    header{
+        display: flex;
+        justify-content: space-between; /* Plasserer elementene venstre/høyre */
+    }
+
+    /* Når skjermen er bred nok, skal .hidden-elementer vises igjen */
+    .hidden{
+        display: inline-block;
+    }
+
+    /* Menyen tilpasset desktop: liste horisontalt */
+    #menu{
+        ul{
+            display: flex; /* Viser menyvalg på linje */
+            gap: 1rem;     /* Avstand mellom menyvalg */
+        }
+    }
+
+    /* Hamburger-knappen skjules på større skjermer */
+    #ham{
+        display: none;
+    }
+
+    #close{
+        display: none;
+    }
+
+}

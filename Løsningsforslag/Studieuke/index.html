@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="icons/css/fontawesome.css" rel="stylesheet" >
+    <link href="icons/css/brands.css" rel="stylesheet" >
+    <link href="icons/css/solid.css" rel="stylesheet" >
+    <link href="icons/css/sharp-thin.css" rel="stylesheet" >
+    <link href="icons/css/sharp-duotone-thin.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="global-header">
+        <nav class="flex-row">
+            <h1><a href="index.html">Logo</a></h1>
+            <section class="flex-group">
+                <button id="search" class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <!-- Hamburger-knapp (synlig på små skjermer) -->
+                <button id="ham" class="icon-btn"><i class="fa-solid fa-bars"></i></button> <!-- &#9776; = ☰ ikon -->
+                <!-- Navigasjonsmenyen -->
+                    <!-- Lukk-knapp (X) for menyen -->
+                    <!-- Menypunkter -->
+                <ul id="menu" class="hidden">
+                    <button id="close" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Tjenester</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </section>
+        </nav>
+        <section class="hero-section">
+            <h1>Building better digital experiences</h1>
+            <a href="#" class="btn">Contact us today</a>
+        </section>
+    </header>
+    <main>
+        <section class="highlight">
+            <figure>
+                <picture>
+                    <source media="(min-width:1200px)" srcset="https://picsum.photos/id/20/1200/1200/">
+                    <source media="(min-width:900px)" srcset="https://picsum.photos/id/20/900/900/">
+                    <img src="https://picsum.photos/id/20/600/600/" alt="">
+                </picture>
+            </figure>
+            <section class="text-container">
+                <h2>Solutions That Work</h2>
+                <p>Our services are built around your goals. We specialize in modern web development, UX design, and digital strategy. Each solution is tailored to meet your unique needs — combining technology and creativity to produce measurable impact.</p>
+            </section>
+        </section>
+        <section class="highlight">
+            <section class="text-container">
+                <h2>Ideas Worth Sharing</h2>
+                <p>Stay up to date with our latest thoughts on design, technology, and innovation. We share insights, stories, and lessons learned from real projects — all with the goal of helping others grow and create better digital experiences.</p>
+            </section>
+            <figure>
+                <picture>
+                    <source media="(min-width:1200px)" srcset="https://picsum.photos/id/20/1200/1200/">
+                    <source media="(min-width:900px)" srcset="https://picsum.photos/id/20/900/900/">
+                    <img src="https://picsum.photos/id/20/600/600/" alt="">
+                </picture>
+            </figure>
+        </section>
+        <section id="services">
+            <h2>From Concept to Launch</h2>
+            <article class="service-card">
+                <i class="fa-solid fa-suitcase"></i>
+                <section class="text-container">
+                    <h3>Built to Scale, Designed to Last</h3>
+                    <p>Each solution is tailored to meet your unique needs</p>
+                </section>
+            </article>
+            <article class="service-card">
+                <i class="fa-solid fa-chart-simple"></i>
+                <section class="text-container">
+                    <h3>Our Expertise</h3>
+                    <p>We specialize in modern web development, UX design, and digital strategy.</p>
+                </section>
+            </article>
+            <article class="service-card">
+                <i class="fa-solid fa-earth-americas"></i>
+                <section class="text-container">
+                    <h3>Solutions That Work</h3>
+                    <p>Our services are built around your goals.</p>
+                </section>
+            </article>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
